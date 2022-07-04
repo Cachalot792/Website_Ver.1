@@ -98,12 +98,12 @@ nav ul{
   padding-top: 130px;
   padding-bottom: 50px;
   padding-left: 30px;
-  color: #8b8b8b;
 }
 nav li{
   line-height: 3;
 }
 nav a{
+  color: #8b8b8b;
   text-decoration: none;
 }
 
