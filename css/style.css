@@ -106,9 +106,6 @@ nav li{
 nav a{
   text-decoration: none;
 }
-nav a:nth-of-type(1){
- color: white
-}
 
 .space{
   width: var(--nav_width);
