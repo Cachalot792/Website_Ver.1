@@ -290,7 +290,7 @@ footer a{
   color:#b6b6b6;/*#928484*/
 }
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 800px){
   main{
     padding-left: 15px;
     padding-right: 15px;

@@ -23,3 +23,10 @@ $(window).scroll(function(){
 });
   
 });
+
+if (window.matchMedia('(max-width: 800px)').matches) {
+  $('.space').removeClass('hidden-space');
+  $('nav').removeClass('hidden-nav');
+  $('.nav-bar').removeClass('nav-bar-white');
+  $('header').removeClass('header-onclick');
+}
