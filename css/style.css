@@ -63,6 +63,7 @@ html{
   height: 100%;
 }
 body{
+  font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN","Yu Gothic UI", "MS PGothic", sans-serif;
   height: 100%;
   color:#454545;
 }
@@ -93,7 +94,6 @@ nav::-webkit-scrollbar-thumb {
 nav::-webkit-scrollbar-track {
   background: #1b1b1b; /*rgba(0, 0, 0, 0.1)*/
 }
-
 nav ul{
   padding-top: 130px;
   padding-bottom: 50px;
@@ -169,6 +169,62 @@ main{
   padding-right: 70px;
   padding-bottom: 70px;
 }
+
+main h1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+}
+main h2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  border-left: 4px solid #666565;
+}
+main h3{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+main h4{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+main h5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+main h6{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+main p{
+  line-height: 20px;
+}
+
 
 footer{
 
