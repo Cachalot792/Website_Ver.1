@@ -98,6 +98,30 @@
     <main>
       <h1>DAアルゴリズムとは</h1>
       <p>制作中</p>
+      <h1>DAアルゴリズム</h1>
+      <input type="button" value="テンプレートデータセット" onclick="ResetTemplateData();"/>
+      <h2>両グループ名と人数</h2>
+      <table id="table1"></table>
+      <p></p>
+      <input type="button" value="希望表作成" onclick="CreateChoiceTableButton();"/>
+      <input type="button" value="希望クリア" onclick="ClearChoiceTable();"/><br>
+      <form name="form1">
+        <select name="which_group">
+          <option value="">どちらからアプローチ</option>
+          <option id="approach_option1"></option>
+          <option id="approach_option2"></option>
+        </select>
+      </form>
+      <input type="button" value="マッチングスタート" onclick="MakeArrayForAlgorithm();"/>
+      <p id="display_warning"></p><br>
+      <h2>マッチング結果</h2>
+      <p id="matching_result"></p>
+      <input type="button" value="マッチングクリア" onclick=" ClearMatcingResult();"/>
+      <p id="matching_result"></p>
+      <h2 id="group_a_choice_table"></h2>
+      <table id="table2"></table>
+      <h2 id="group_b_choice_table"></h2>
+      <table id="table3"></table>
     </main>
 
     <footer>
@@ -108,7 +132,9 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script  src="/js/script.js"></script>
+    <script  src="/js/daalgorithm/script.js"></script>
+    <script  src="/js/daalgorithm/daalgorithm_1_to_1.js"></script>
   </body>
 </html>
