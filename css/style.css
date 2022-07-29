@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************/
+
+:root{
+  --nav_width: 250px;
+  --header_height: 80px;
+  --footer_height: 25px;
+}
+
+*{
+  transition:0.5s;
+}
+
+html{
+  height: 100%;
+}
+body{
+  font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN","Yu Gothic UI", "MS PGothic", sans-serif;
+  height: 100%;
+  color:#454545;
+}
+
+nav{
+  width: var(--nav_width);
+  height:100vh;
+  background-color:#1b1b1b; /*#928484*/
+  position:fixed;
+  left:0px;
+  z-index: 9;
+
+  /* 縦方向のスクロールバーを表示 */
+  overflow-y: auto;
+
+  /* IE などのスクロールバーの色設定 */
+  scrollbar-face-color: #999; /*#999*/
+  scrollbar-track-color: #eee;  /*#eee*/
+  /* スマホ用の慣性スクロール */
+  -webkit-overflow-scrolling: touch;
+}
+nav::-webkit-scrollbar{
+  width: 5px;
+}
+nav::-webkit-scrollbar-thumb {
+  background: #1b1b1b;  /*rgba(0, 0, 0, 0.3)*/
+}
+nav::-webkit-scrollbar-track {
+  background: #1b1b1b; /*rgba(0, 0, 0, 0.1)*/
+}
+nav ul{
+  padding-top: 130px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+nav li{
+  line-height: 3;
+}
+nav a{
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+.space{
+  width: var(--nav_width);
+  height:100vh;
+  float:left;
+}
+
+.nav-bar{
+  margin-top:30px;   
+  margin-left: 25px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  color:white;
+}
+
+header{
+  overflow:hidden;
+  height:80px;
+  background-color:#535353; /*#FC9D9D*/
+  position:fixed;
+  left: var(--nav_width);
+  width:calc(100% -  var(--nav_width));
+  color:white;
+  z-index: 9;
+}
+
+header img{
+  height: 40px;
+  width: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 70px;
+  float: left;
+}
+
+header h1{
+  line-height:80px;
+  padding-left:100px;
+  font-size: 20px;
+  float:left;
+}
+
+header ul{
+  display:flex;
+  justify-content:flex-end;
+  align-items: center; 
+  height:80px;
+}
+
+header li{
+  margin-right:50px;
+}
+
+main{
+  overflow:hidden;
+  background-color:#EEF9FF;/*#EEF9FF*/
+  box-sizing: border-box;
+  min-height: calc(100% - var(--footer_height));
+  padding-top: 130px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+}
+
+main h1{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+}
+main h2{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border-left: 4px solid #666565;
+}
+main h3{
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+  border-bottom:solid 3px #1b1b1b;
+}
+main h4{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+main h5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+main h6{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+main p{
+  line-height: 20px;
+}
+main ul{
+  list-style: disc;
+  list-style-position: inside;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .font_bold{
+  font-weight:bold;
+}
+
+
+footer{
+
+  position: sticky;
+  top: 100vh;
+  box-sizing: border-box;
+  height: var(--footer_height);
+  overflow:hidden;
+  background-color:#c9c8c8;/*#EEF9FF*/
+  text-align: right;
+  color: #545454;
+}
+footer small{
+  padding-right: 5px;
+}
+footer a{
+  color: #545454;
+  text-decoration:underline;
+}
+
+
+.hidden-space{
+  width: 0px;
+}
+
+.hidden-nav{
+  left: calc(-1 * var(--nav_width));
+}
+
+.header-onclick{
+  width:100%;
+  left:0px;
+}
+
+.header-scroll{
+  height:50px;
+  background-color:#a1a0a0;/*#FCECEA*/
+}
+
+.header-scroll-img{
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-scroll-h1{
+  line-height:50px;
+}
+
+.header-scroll-ul{
+   height:50px;
+}
+
+.header-scroll-nav{
+   margin-top:17px;
+}
+
+.nav-bar-white{
+  color:#b6b6b6;/*#928484*/
+}
+
+@media screen and (max-width: 800px){
+  main{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
