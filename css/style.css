@@ -162,7 +162,7 @@ header li{
 
 main{
   overflow:hidden;
-  background-color:#EEF9FF;/*#EEF9FF*/
+  background-color:white;/*#EEF9FF*/
   box-sizing: border-box;
   min-height: calc(100% - var(--footer_height));
   padding-top: 130px;
@@ -242,7 +242,6 @@ footer{
 
   position: sticky;
   top: 100vh;
-  box-sizing: border-box;
   height: var(--footer_height);
   overflow:hidden;
   background-color:#c9c8c8;/*#EEF9FF*/
