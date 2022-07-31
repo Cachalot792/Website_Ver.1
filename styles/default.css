@@ -234,11 +234,21 @@ main h6{
 main p{
   line-height: 20px;
 }
-main ul, main ol{
+main ul{
   list-style: disc;
   list-style-position: inside;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+main ol{
+  counter-reset: count 0;
+  list-style-position: inside;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main ol li{
+  content: counter(count) ". ";
+  counter-increment: count 1;
 }
 main .font_bold{
   font-weight:bold;
