@@ -252,11 +252,13 @@ footer{
   height: var(--footer_height);
   overflow:hidden;
   background-color:white;/*#c9c8c8*/
-  text-align: center;
+  text-align: right;
   color: #545454;
 }
 footer small{
-  padding-right: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  line-height: var(--footer_height);
 }
 footer a{
   color: #545454;
