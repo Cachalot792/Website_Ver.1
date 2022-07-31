@@ -1,6 +1,6 @@
 ---
 layout: default
-title: トップページ
+title: ホーム
 ---
 
 # トップページです
