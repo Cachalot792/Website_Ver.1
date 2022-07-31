@@ -152,7 +152,7 @@ header{
   overflow:hidden;
   height:80px;
   background-color:rgba(255, 255, 255, 0.8); /*#FC9D9D*/
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(30px);
   position:fixed;
   left: 0px;
   width: 100%;
