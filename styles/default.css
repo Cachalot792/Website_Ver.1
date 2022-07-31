@@ -1,6 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* Reset CSS */
+
+/* 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -47,9 +50,10 @@ table {
 	border-spacing: 0;
 }
 
-/*************************/
+/*******************************************************************************************************************/
 
 :root{
+  /*定数*/
   --nav_width: 250px;
   --header_height: 80px;
   --footer_height: 25px;
@@ -67,10 +71,18 @@ body{
   height: 100%;
   color:#454545;
 }
+.nav_header{
+  width: calc(var(--nav_width) - 1px);
+  height: var(--header_height);
+  position: fixed;
+  border-right: 1px solid #dcdcdc;
+  z-index: 9;
+}
 
 nav{
   width: var(--nav_width);
-  height:100vh;
+  margin-top: var(--header_height);
+  height:calc(100% - var(--header_height));
   background-color:white; /*#1b1b1b*/
   position:fixed;
   left:0px;
@@ -95,9 +107,9 @@ nav::-webkit-scrollbar-track {
   background: #dcdcdc; /*rgba(0, 0, 0, 0.1)*/
 }
 nav ul{
-  padding-top: 130px;
+  padding-top: 30px;
   padding-bottom: 50px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 nav li{
   line-height: 3;
@@ -118,8 +130,22 @@ nav a{
   margin-left: 25px;
   cursor: pointer;
   position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 10;
   color:black;
+}
+
+.home_icon{
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
 }
 
 header{
@@ -127,37 +153,17 @@ header{
   height:80px;
   background-color:rgba(255, 255, 255, 0.156); /*#FC9D9D*/
   position:fixed;
-  left: var(--nav_width);
-  width:calc(100% -  var(--nav_width));
+  left: 0px;
+  width: 100%;
   color:black;
-  z-index: 9;
-}
-
-header img{
-  height: 40px;
-  width: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 70px;
-  float: left;
+  z-index: 8;
 }
 
 header h1{
   line-height:80px;
-  padding-left:100px;
+  padding-left:calc(var(--nav_width) + 70px);
   font-size: 20px;
   float:left;
-}
-
-header ul{
-  display:flex;
-  justify-content:flex-end;
-  align-items: center; 
-  height:80px;
-}
-
-header li{
-  margin-right:50px;
 }
 
 main{
@@ -227,7 +233,7 @@ main h6{
 main p{
   line-height: 20px;
 }
-main ul{
+main ul, main ol{
   list-style: disc;
   list-style-position: inside;
   margin-top: 10px;
@@ -256,6 +262,9 @@ footer a{
   text-decoration:underline;
 }
 
+.hidden-nav_header{
+  width: 0px;
+}
 
 .hidden-space{
   width: 0px;
@@ -263,35 +272,6 @@ footer a{
 
 .hidden-nav{
   left: calc(-1 * var(--nav_width));
-}
-
-.header-onclick{
-  width:100%;
-  left:0px;
-}
-
-.header-scroll{
-  height:50px;
-  background-color:#a1a0a0;/*#FCECEA*/
-}
-
-.header-scroll-img{
-  height: 30px;
-  width: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.header-scroll-h1{
-  line-height:50px;
-}
-
-.header-scroll-ul{
-   height:50px;
-}
-
-.header-scroll-nav{
-   margin-top:17px;
 }
 
 .nav-bar-white{
