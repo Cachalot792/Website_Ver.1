@@ -246,7 +246,7 @@ main ol{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-main ol li{
+main ol li::before{
   content: counter(count) ". ";
   counter-increment: count 1;
 }
