@@ -1,5 +1,6 @@
 ---
 layout: default
-title: DAアルゴリズム
+title: TTC (Top Trading Cycle)
 ---
 
+作成中  
