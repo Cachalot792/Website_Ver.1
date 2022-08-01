@@ -27,18 +27,21 @@ Markdownだけが目的であればもっと簡単な方法があるので、今
 ## favicon  
 Markdownとは関係ありませんが、今回faviconにも対応しました。  
 faviconとはブラウザでページのタブに表示されるアイコンの事です。  
-ChromeやSafariなどブラウザの種類によってそれぞれで設定しなければならない上にAndroidやiOSなど端末ごとにも設定が必要なのでかなり面倒な作業になりますが、これを環境に合わせて半自動生成してくれる神ツールを発見したのでこちらを使用しました。  
+ChromeやSafariなどブラウザの種類によってそれぞれで設定しなければならない上にAndroidやiOSなど端末ごとにも設定が必要なのでかなり面倒な作業になりますが、これを環境に合わせて半自動生成してくれるFavicon Generatorという神ツールを発見したのでこちらを使用しました。  
 便利すぎて感動しました…  
 
 ## 参考文献  
-Markdownで書かれたページをGitHub Pagesで公開する
+Markdownで書かれたページをGitHub Pagesで公開する  
 [http://yoshikyoto.github.io/text/git/gh_pages_md.html]()  
 
+
 Front Matter  
-[http://jekyllrb-ja.github.io/docs/front-matter/]()
+[http://jekyllrb-ja.github.io/docs/front-matter/]()  
+
 
 Adding a favicon to a Jekyll-based static website  
 [https://ptc-it.de/add-favicon-to-mm-jekyll-site/]()  
+
 
 Favicon Generator. For real.  
 [https://realfavicongenerator.net/]()  
