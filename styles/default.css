@@ -113,6 +113,7 @@ header h1{
   padding-left: var(--main_padding);
   padding-right: var(--main_padding);
   font-size: 20px;
+  font-weight: bold;
   float:left;
 }
 
