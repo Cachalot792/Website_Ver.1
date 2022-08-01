@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 22-07-04
+title: 22.07.04
 ---
 
 # 22.07.04 
