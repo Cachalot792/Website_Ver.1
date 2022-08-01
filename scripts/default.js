@@ -16,9 +16,9 @@ if (window.matchMedia('(max-width: 600px)').matches) {
 $(window).bind("load", function(){
   if(location.href == "https://cachalot792.github.io/") {
     $('nav li:nth-of-type(1) a').addClass('nav-highlight');
-  }else if(document.URL.match("/document/profile/")){
+  }else if(document.URL.match("/documents/profile/")){
     $('nav li:nth-of-type(2) a').addClass('nav-highlight');
-  }else if(document.URL.match("/document/log/")){
+  }else if(document.URL.match("/documents/blog/")){
     $('nav li:nth-of-type(3) a').addClass('nav-highlight');
   }else if(document.URL.match("/documents/economics/daalgorithm/")){
     $('nav li:nth-of-type(4) a').addClass('nav-highlight');
