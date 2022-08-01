@@ -12,3 +12,9 @@ if (window.matchMedia('(max-width: 600px)').matches) {
   $('.nav-bar').addClass('nav-bar-white');
   $('header').addClass('header-onclick');
 };
+
+$(window).bind("load", function(){
+  if(document.URL.indexOf("https://cachalot792.github.io/")) {
+    $('nav li:nth-child(1)').css('color', 'black');
+  }
+});

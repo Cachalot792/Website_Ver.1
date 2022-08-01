@@ -150,6 +150,7 @@ nav ul{
 }
 nav li{
   line-height: 3;
+  color: #dcdcdc;
 }
 nav a{
   color: #8b8b8b;
@@ -285,6 +286,10 @@ footer a{
 
 .nav-bar-white{
   color:#b6b6b6;/*#928484*/
+}
+
+.nav-highlight{
+  color: black;
 }
 
 /*******************************************************************************************************************/
