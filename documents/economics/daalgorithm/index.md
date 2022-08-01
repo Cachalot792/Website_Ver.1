@@ -42,8 +42,8 @@ DAアルゴリズムとは、デヴィッド・ゲールとロイド・シャプ
 # 参考文献・リンク  
 坂井豊貴（2010）.『マーケットデザイン入門　─オークションとマッチングの経済学─』.ミネルヴァ書房  
   
-  
+
 自作したDAアルゴリズム部分だけ抜き出してGithubにて公開しました  
-[https://github.com/Cachalot792/DAalgorithm]()  
+[https://github.com/Cachalot792/DAalgorithm](https://github.com/Cachalot792/DAalgorithm)  
 
 <script  src="/scripts/daalgorithm.js"></script>

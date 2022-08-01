@@ -27,8 +27,9 @@ DAアルゴリズムを実装しました。
 
 ## 参考文献・リンク
 @DeployCat “ネストの深さは闇の深さ” Qiita  
-[https://qiita.com/DeployCat/items/1ec901864d4ab11c8d6f]()  
+[https://qiita.com/DeployCat/items/1ec901864d4ab11c8d6f](https://qiita.com/DeployCat/items/1ec901864d4ab11c8d6f)  
+    
   
   
 Javascriptで書いたDAアルゴリズム部分だけ抜き出してGithubに公開しました。  
-[https://github.com/Cachalot792/DAalgorithm]()  
+[https://github.com/Cachalot792/DAalgorithm](https://github.com/Cachalot792/DAalgorithm)  
