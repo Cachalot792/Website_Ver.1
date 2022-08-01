@@ -271,6 +271,38 @@ footer a{
 }
 
 /*******************************************************************************************************************/
+/*表関係のcss*/
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th {
+  border: 1px solid grey;
+  padding: 3px 10px;
+  background: #ddd;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item {
+  border: 1px solid grey;
+  padding: 3px 10px;
+  background: #ddd;
+  font-weight: bold;
+  text-align: center;
+}
+
+.value {
+  border: 1px solid grey;
+  padding: 3px 10px;
+  cursor: pointer;
+  width: 100px;
+}
+
+
+/*******************************************************************************************************************/
 /*動きのcss*/
 
 .hidden-nav_header{
