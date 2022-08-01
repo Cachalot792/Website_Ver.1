@@ -15,6 +15,6 @@ if (window.matchMedia('(max-width: 600px)').matches) {
 
 $(window).bind("load", function(){
   if(location.href == "https://cachalot792.github.io/") {
-    $('nav li:nth-of-type(1) a').css('color', '#000');
+    $('nav li:nth-of-type(1) a').addClass('nav-highlight');
   }
 });
