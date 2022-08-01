@@ -226,6 +226,9 @@ main h6{
 main p{
   line-height: 20px;
 }
+main a{
+  word-break: break-all;
+}
 main ul{
   list-style: disc;
   list-style-position: inside;
