@@ -237,11 +237,11 @@ footer a{
   position: relative;
   display: inline-block;
   margin-bottom: 15px;
-  width: 100%;
+  width: auto;
 }
 .select select {
   display: inline-block;
-  width: 100%;
+  width: auto;
   cursor: pointer;
   padding: 10px 15px;
   outline: 0;
@@ -281,6 +281,28 @@ footer a{
 .select select:disabled ~ .select__arrow {
   border-top-color: #ccc;
 }
+
+.button{
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #babfc3;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #202223;
+  background: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+}
+.button :hover {
+  background: #f6f6f7;
+  outline: 1px solid transparent;
+}
+
 /*******************************************************************************************************************/
 /*動きのcss*/
 
