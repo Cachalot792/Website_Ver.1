@@ -212,6 +212,10 @@ main{
   padding-top: calc(var(--header_height) + 50px);
 }
 
+ol {
+  list-style-type: decimal;
+}
+
 footer{
   position: sticky;
   top: 100vh;
