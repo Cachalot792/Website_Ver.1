@@ -232,6 +232,11 @@ footer a{
   text-decoration:underline;
 }
 
+/*細々*/
+.display_warning {
+  color: red;
+}
+
 /*select boxes*/
 form {
   position: relative;
@@ -281,6 +286,8 @@ select:hover ~ .select__arrow, select:focus ~ .select__arrow {
 select:disabled ~ .select__arrow {
   border-top-color: #ccc;
 }
+
+/*button*/
 
 input[type="button"] {
   display: inline-block;

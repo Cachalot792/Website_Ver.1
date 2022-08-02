@@ -268,6 +268,9 @@ function SetTemplateData(){
 //Html上の表を配列に直してアルゴリズムへ送る
 //------------------------------------------------------------------------
 function MakeArrayForAlgorithm(){
+
+  WarningReset();
+
   let groupPopArray = new Array(2);
   let groupMemberArray = [[],[]];
   groupPopArray[0] = Number(document.querySelector("#T1R2C1").innerHTML);
@@ -306,13 +309,14 @@ function MakeArrayForAlgorithm(){
 
 function ClearMatcingResult(){
   document.querySelector("#matching_result").innerHTML = "";
-  document.querySelector("#display_warning").innerHTML = "";
+  WarningReset();
 }
 
 //------------------------------------------------------------------------
 //表作成ボタン
 //------------------------------------------------------------------------
 function CreateChoiceTableButton(){
+  WarningReset();
   DeleteChoiceTable();
   CreateChoiceTable();
 };
@@ -320,6 +324,14 @@ function CreateChoiceTableButton(){
 //テンプレートデータセットボタン
 //------------------------------------------------------------------------
 function ResetTemplateData(){
+  WarningReset();
   DeleteChoiceTable();
   SetTemplateData();
+};
+
+//------------------------------------------------------------------------
+//警告リセット
+//------------------------------------------------------------------------
+function WarningReset(){
+  document.querySelector("#display_warning").innerHTML = "";
 };

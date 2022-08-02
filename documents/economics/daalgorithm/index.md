@@ -11,14 +11,11 @@ DAアルゴリズムとは、デヴィッド・ゲールとロイド・シャプ
 希望表内での空集合は、空集合より右側の（選好順位の低い）人を選ぶよりは「１人でいるほうがまし」という意味です。  
 空集合には半角数字の「0」を使用してください。又は、なにも書かないままにしてください。  
 
-<input type="button" value="テンプレートデータセット" onclick="ResetTemplateData();"/>  
-
 ## 両グループ名と人数  
 
+<input type="button" value="テンプレートデータセット" onclick="ResetTemplateData();"/><br/>
 <table id="table1"></table>
-<p></p>
-<input type="button" value="希望表作成" onclick="CreateChoiceTableButton();"/>
-<input type="button" value="希望クリア" onclick="ClearChoiceTable();"/><br>
+<br/>
 <form name="form1">
     <select name="which_group">
         <option value="">どちらからアプローチ</option>
@@ -27,17 +24,19 @@ DAアルゴリズムとは、デヴィッド・ゲールとロイド・シャプ
     </select>
     <div class="select__arrow"></div>
 </form>
-<input type="button" value="マッチングスタート" onclick="MakeArrayForAlgorithm();"/>
-<p id="display_warning"></p><br>  
 
 ## マッチング結果  
+<input type="button" value="マッチングスタート" onclick="MakeArrayForAlgorithm();"/>
+<input type="button" value="マッチングクリア" onclick=" ClearMatcingResult();"/><br/>
+<p id="display_warning"></p><br/>  
+<p id="matching_result"></p><br/>
 
-<p id="matching_result"></p>
-<input type="button" value="マッチングクリア" onclick=" ClearMatcingResult();"/>
-<p id="matching_result"></p>
-<h2 id="group_a_choice_table"></h2>
+## 希望表  
+<input type="button" value="希望表作成" onclick="CreateChoiceTableButton();"/>
+<input type="button" value="希望クリア" onclick="ClearChoiceTable();"/><br/>
+<h3 id="group_a_choice_table"></h3>
 <table id="table2"></table>
-<h2 id="group_b_choice_table"></h2>
+<h3 id="group_b_choice_table"></h3>
 <table id="table3"></table>  
 
 # 参考文献・リンク  
