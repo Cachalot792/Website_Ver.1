@@ -42,6 +42,7 @@ table {
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
 input, textarea {
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
@@ -74,7 +75,9 @@ meter {
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
+  line-break: after-white-space;
   -webkit-user-select: auto;
+  user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
@@ -208,82 +211,6 @@ main{
   padding-top: calc(var(--header_height) + 50px);
 }
 
-main h1{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  border-bottom: 3px solid #000;
-}
-main h2{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 8px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  border-left: 4px solid #666565;
-}
-main h3{
-  display: inline-block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: large;
-  font-weight: bold;
-  border-bottom:solid 3px #1b1b1b;
-}
-main h4{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: large;
-  font-weight: bold;
-}
-main h5{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: large;
-  font-weight: bold;
-}
-main h6{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: large;
-  font-weight: bold;
-}
-main p{
-  line-height: 20px;
-}
-main a{
-  word-break: break-all;
-}
-main ul{
-  list-style: disc;
-  list-style-position: inside;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-main ol{
-  counter-reset: count 0;
-  list-style-position: inside;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-main ol li::before{
-  content: counter(count) ". ";
-  counter-increment: count 1;
-}
-
 footer{
   position: sticky;
   top: 100vh;
@@ -305,38 +232,55 @@ footer a{
   text-decoration:underline;
 }
 
-/*******************************************************************************************************************/
-/*表関係のcss*/
-
-table {
-  border-collapse: collapse;
-  table-layout: fixed;
+/*select boxes*/
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
 }
-
-th {
-  border: 1px solid grey;
-  padding: 3px 10px;
-  background: #ddd;
-  font-weight: bold;
-  text-align: center;
-}
-
-.item {
-  border: 1px solid grey;
-  padding: 3px 10px;
-  background: #ddd;
-  font-weight: bold;
-  text-align: center;
-}
-
-.value {
-  border: 1px solid grey;
-  padding: 3px 10px;
+.select select {
+  display: inline-block;
+  width: 100%;
   cursor: pointer;
-  width: 100px;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-
-
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover, .select select:focus {
+  color: #000;
+  background: #ccc;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select__arrow, .select select:focus ~ .select__arrow {
+  border-top-color: #000;
+}
+.select select:disabled ~ .select__arrow {
+  border-top-color: #ccc;
+}
 /*******************************************************************************************************************/
 /*動きのcss*/
 

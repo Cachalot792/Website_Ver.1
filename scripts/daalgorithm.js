@@ -294,7 +294,7 @@ function MakeArrayForAlgorithm(){
       groupPreferenceTableArray[1][i-1].push(document.querySelector("#T3R" + i + "C" + (j+1)).innerHTML);
     };
   };
-  const selectedNumber = document.form1.which_group.selectedIndex;
+  const selectedNumber = document.form1.select.which_group.selectedIndex;
   if(selectedNumber == 1){
     CheckArrayAndRunAlgorithm(groupMemberArray[0],groupPreferenceTableArray[0],groupMemberArray[1],groupPreferenceTableArray[1]);
   }else if(selectedNumber == 2){
