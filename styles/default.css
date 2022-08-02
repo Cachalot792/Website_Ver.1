@@ -233,13 +233,13 @@ footer a{
 }
 
 /*select boxes*/
-.select {
+form {
   position: relative;
   display: inline-block;
   margin-bottom: 15px;
   width: auto;
 }
-.select select {
+select {
   display: inline-block;
   width: auto;
   cursor: pointer;
@@ -253,14 +253,14 @@ footer a{
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.select select::-ms-expand {
+select::-ms-expand {
   display: none;
 }
-.select select:hover, .select select:focus {
+select:hover, select:focus {
   color: #000;
   background: #ccc;
 }
-.select select:disabled {
+select:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -275,14 +275,14 @@ footer a{
   border-width: 8px 5px 0 5px;
   border-color: #7b7b7b transparent transparent transparent;
 }
-.select select:hover ~ .select__arrow, .select select:focus ~ .select__arrow {
+select:hover ~ .select__arrow, select:focus ~ .select__arrow {
   border-top-color: #000;
 }
-.select select:disabled ~ .select__arrow {
+select:disabled ~ .select__arrow {
   border-top-color: #ccc;
 }
 
-.button{
+input[type="button"] {
   display: inline-block;
   outline: 0;
   cursor: pointer;
@@ -298,7 +298,7 @@ footer a{
   font-size: 14px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
 }
-.button :hover {
+input[type="button"] :hover {
   background: #f6f6f7;
   outline: 1px solid transparent;
 }

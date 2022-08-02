@@ -20,14 +20,12 @@ DAアルゴリズムとは、デヴィッド・ゲールとロイド・シャプ
 <input type="button" value="希望表作成" onclick="CreateChoiceTableButton();"/>
 <input type="button" value="希望クリア" onclick="ClearChoiceTable();"/><br>
 <form name="form1">
-    <div class="select">
-        <select name="which_group">
-            <option value="">どちらからアプローチ</option>
-            <option id="approach_option1"></option>
-            <option id="approach_option2"></option>
-        </select>
-        <div class="select__arrow"></div>
-    </div>
+    <select name="which_group">
+        <option value="">どちらからアプローチ</option>
+        <option id="approach_option1"></option>
+        <option id="approach_option2"></option>
+    </select>
+    <div class="select__arrow"></div>
 </form>
 <input type="button" value="マッチングスタート" onclick="MakeArrayForAlgorithm();"/>
 <p id="display_warning"></p><br>  
