@@ -24,7 +24,7 @@ a, button {
   cursor: revert;
 }
 
-/* Remove list styles (bullets/numbers) */
+/* Remove list styles (bullets/numbers) 
 ol, ul, menu {
   list-style: none;
 }
@@ -183,6 +183,7 @@ nav::-webkit-scrollbar-track {
   background: #dcdcdc; /*rgba(0, 0, 0, 0.1)*/
 }
 nav ul{
+  list-style: none;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -230,11 +231,6 @@ footer small{
 footer a{
   color: #545454;
   text-decoration:underline;
-}
-
-/*細々*/
-.display_warning {
-  color: red;
 }
 
 /*select boxes*/
