@@ -4,6 +4,3 @@ Jekyllを使ってMarkdownにも対応しました。
   
 [ホームページリンク](https://cachalot792.github.io/)  
 [記法参考](https://qiita.com/tbpgr/items/989c6badefff69377da7)  
-
-# 既知の不具合・改善点等  
-
