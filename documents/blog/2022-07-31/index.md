@@ -32,16 +32,16 @@ ChromeやSafariなどブラウザの種類によってそれぞれで設定し�
 
 ## 参考文献  
 Markdownで書かれたページをGitHub Pagesで公開する  
-[http://yoshikyoto.github.io/text/git/gh_pages_md.html]()  
+[http://yoshikyoto.github.io/text/git/gh_pages_md.html](http://yoshikyoto.github.io/text/git/gh_pages_md.html)  
 
 
 Front Matter  
-[http://jekyllrb-ja.github.io/docs/front-matter/]()  
+[http://jekyllrb-ja.github.io/docs/front-matter/](http://jekyllrb-ja.github.io/docs/front-matter/)  
 
 
 Adding a favicon to a Jekyll-based static website  
-[https://ptc-it.de/add-favicon-to-mm-jekyll-site/]()  
+[https://ptc-it.de/add-favicon-to-mm-jekyll-site/](https://ptc-it.de/add-favicon-to-mm-jekyll-site/)  
 
 
 Favicon Generator. For real.  
-[https://realfavicongenerator.net/]()  
+[https://realfavicongenerator.net/](https://realfavicongenerator.net/)  
